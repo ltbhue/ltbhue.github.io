@@ -79,7 +79,7 @@ h2{
     text-align: justify;
 }
 .experience{
-    text-align: right;
+    text-align: left;
 }
 .experience h4{
     margin:20px 0 10px;
@@ -90,10 +90,10 @@ h2{
 .experience ul{
     padding:0;
     margin: 0;
-list-style: none;
 }
 .experience li{
     padding:10px 0;
+    margin-left: 24px;
 }
 .project{
     padding-left: 30px;
