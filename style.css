@@ -14,7 +14,7 @@ body{
     width:720px;
     max-width: 100%;
     margin:auto;
-    padding:50px;
+    padding:24px;
     box-shadow: 0 10px 50px #858585;
     display: grid;
    grid-template-columns: 35% 60%;
