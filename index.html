@@ -8,13 +8,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="html2canvas.js"></script>
+
 </head>
 
-<body>
-    <div class="container">
+<body id="cv">
+    
+    <script>
+        function printPDF() {
+            $('#printPDF').hide()
+            const element = document.getElementById('cv');
+            const opt = {
+                filename: 'La_Thi_Bich_Hue_Tester.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save();
+            setTimeout(() => {
+                $('#printPDF').show()   
+            });
+        }
+    </script>
+    <div class="container" >
         <div class="avatar">
-            <img src="https://github.com/ltbhue/ltbhue.github.io/assets/51117077/56ceddd5-6209-4258-80ae-b39a22eb44b5"
-                alt="">
+            <a id="printPDF" href="javascript:printPDF()">In PDF</a>
+            <img src="./avatar.png" alt="">
         </div>
         <div class="name">
             <h1>LÃ THỊ BÍCH HUỆ</h1>
@@ -31,6 +52,7 @@
                         rel="noopener noreferrer">https://www.facebook.com/la.thi.bich.hue</a>
                 </li>
             </ul>
+            
         </div>
         <div class="info">
             <ul>
@@ -67,7 +89,7 @@
                 <div class="time">
                     <h4><b>(8/2021 - Đến nay): Công ty cổ phần chuyển đổi số Viet Ants</b></h4>
                 </div>
-                
+
                 <h4>Trưởng nhóm nhân viên kiểm soát chất lượng</h4>
                 <div class="des">
                     <ul>
@@ -76,6 +98,7 @@
                     </ul>
                 </div>
             </div>
+            <br>
             <h2 class="skills">
                 Các kỹ năng
             </h2>
@@ -124,7 +147,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="item">
                 <h4>Website TVS- Thư viện số</h4>
                 <div class="time">

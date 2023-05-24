@@ -3,9 +3,15 @@ body{
     background-color: #D5D5D5;
     font-family: system-ui;
 }
+#printPDF {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
 .container{
+    position: relative;
     background-color: #E9E7EA;
-    width:1000px;
+    width:720px;
     max-width: 100%;
     margin:auto;
     padding:50px;
