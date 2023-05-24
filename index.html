@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lã Thị Bích Huệ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -20,7 +20,7 @@
             $('#printPDF').hide()
             const element = document.getElementById('cv');
             const opt = {
-                filename: 'La_Thi_Bich_Hue_Tester.pdf',
+                filename: 'La_Thi_Bich_Hue_QC.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
@@ -34,7 +34,7 @@
     </script>
     <div class="container" >
         <div class="avatar">
-            <a id="printPDF" href="javascript:printPDF()">In PDF</a>
+            <a id="printPDF" href="javascript:printPDF()">Xuất PDF</a>
             <img src="./avatar.png" alt="">
         </div>
         <div class="name">
