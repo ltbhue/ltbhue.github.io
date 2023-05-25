@@ -21,9 +21,18 @@ body{
    column-gap: 5%; 
    row-gap: 30px;
 }
+.fullname {
+    font-size: 3rem !important;
+}
+
+@media(max-width: 800px) {
+    .fullname {
+        font-size: 1.4em !important;
+    }
+  }
 
 .avatar img{
-    width:200px;
+    width:180px;
     height:200px;
     object-fit: cover;
     border-radius: 50%;
